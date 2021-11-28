@@ -1,0 +1,12 @@
+# Roles de usuario
+ descripcion : permisologias de usuario dentro de la plataforma
+ - admin
+ - leader
+ - employe
+
+# Grupos o equipos
+    descripcion = es añadir a un grupo de empleados  y 
+    poder gestionar el equipo con la limitacion de eliminar el grupo
+
+# Compañia o agencia
+    descripcion = Estacion general del usuario o usuario admin
