@@ -5,5 +5,7 @@ class Company(models.Model):
         "users.User", related_name="owner_company", on_delete=models.CASCADE)
     name = models.CharField("Name", max_length=100, blank=False, null=False)
     
+    status = models.BooleanField("Status" , default=False)
+    
     def __str__(self):
         return f"{self.name} -- {self.owner}"

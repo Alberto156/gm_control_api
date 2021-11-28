@@ -11,6 +11,6 @@ class Roles(models.Model):
 
 class User(AbstractUser):
     roles = models.ManyToManyField(Roles, related_name="user_roles")
-    
+
     def __str__(self):
         return f"{self.username} : {self.email}"
