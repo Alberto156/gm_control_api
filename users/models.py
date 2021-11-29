@@ -10,7 +10,20 @@ class Roles(models.Model):
 
 
 class User(AbstractUser):
-    roles = models.ManyToManyField(Roles, related_name="user_roles")
+    roles = models.ManyToManyField(
+        Roles, related_name="user_roles", blank=True)
+
+    start_date = models.DateField(
+        null=True,
+        blank=True,
+        help_text="Select the date of the task start",
+    )
+
+    end_date = models.DateField(
+        null=True,
+        blank=True,
+        help_text="Select the date of the task end"
+    )
 
     def __str__(self):
         return f"{self.username} : {self.email}"

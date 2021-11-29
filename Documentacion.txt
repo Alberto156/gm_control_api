@@ -1,8 +1,9 @@
 # Roles de usuario
  descripcion : permisologias de usuario dentro de la plataforma
- - admin
- - leader
- - employe
+ - super_admin // desarrolladores o dueños
+ - admin // dueño compañia
+ - manager
+ - becado
 
 # Grupos o equipos
     descripcion = es añadir a un grupo de empleados  y 
